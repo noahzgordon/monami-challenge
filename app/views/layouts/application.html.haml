@@ -16,7 +16,9 @@
     = javascript_importmap_tags
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
 
-    = javascript_tag do
-      window._RAILS_ENV = "#{Rails.env}";
+    - if Rails.env != 'production'
+      = javascript_tag do
+        window.RAILS_ENV = "#{Rails.env}";
+
   %body
     = yield
