@@ -1,24 +1,7 @@
-# README
+Coding challenge repository for Mon Ami.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In addition to the output of the challenge itself, this repository includes:
+- a modern Rails 8 application setup using importmaps with vendored code for JavaScript
+- integration of front-end libraries: Github View Components, Bootstrap, haml-rails
+- usage of dartsass-rails for SASS compilation
+- Selenium test setup used to verify integration of Bootstrap, Stimulus
