@@ -1,0 +1,12 @@
+-# TODO: Wire up a Stimulus controller to manually open modal after content is loaded
+#modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", tabindex: "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        = title
+        - if !disable_dismiss
+          %button.btn-close{ 'data' => { 'bs-dismiss' => 'modal' }, 'aria-label' => "Close" }
+      .modal-body
+        = body
+      .modal-footer
+        = footer

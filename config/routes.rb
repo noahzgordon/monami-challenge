@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'dashboard#index'
+
+  get 'modal' => 'dashboard#modal', as: :modal
 end

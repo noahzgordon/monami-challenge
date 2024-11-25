@@ -1,0 +1,8 @@
+%turbo-frame#modal-frame
+    = render ModalComponent.new(disable_dismiss: true) do |modal|
+        = modal.with_title do
+            %h4.modal-title= 'This is the title!'
+        = modal.with_body do
+            = 'This is a modal body!'
+        = modal.with_footer do
+            %button= 'Modal footer'

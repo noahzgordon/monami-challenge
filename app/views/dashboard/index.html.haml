@@ -1,1 +1,7 @@
 Hello world!
+
+-# TODO: Encapsulate button and frame together in a single partial/component
+%a.btn.btn-primary{ href: modal_path, data: { 'turbo-frame' => 'modal-frame' } }
+    = 'Load the modal!'
+
+%turbo-frame#modal-frame
